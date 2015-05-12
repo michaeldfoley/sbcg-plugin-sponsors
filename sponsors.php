@@ -35,7 +35,9 @@ function _sbcg_create_sponsors() {
         'parent_item_colon' => __( 'Parent Sponsor', '_sbcgsponsors' ),
         'all_items' => __( 'All Sponsors', '_sbcgsponsors' )
       ),
-
+      'rewrite' => array(
+        'slug' => __( 'sponsors', '_sbcgsponsors' )
+      ),
       'public' => true,
       'menu_position' => 30,
       'supports' => array( 'title', 'editor', 'thumbnail' ),
@@ -47,6 +49,12 @@ function _sbcg_create_sponsors() {
     )
   );
 }
+
+/**
+ * Adds sponsors shortcode
+ *
+ */
+require plugin_dir_path( __FILE__ ) . 'shortcode.php';
 
 
 ?>
