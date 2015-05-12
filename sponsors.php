@@ -52,9 +52,11 @@ function _sbcg_create_sponsors() {
 
 /**
  * Adds sponsors shortcode
- *
  */
 require plugin_dir_path( __FILE__ ) . 'shortcode.php';
 
-
+/**
+ * Adds sponsors shortcode
+ */
+require plugin_dir_path( __FILE__ ) . 'status.php';
 ?>
