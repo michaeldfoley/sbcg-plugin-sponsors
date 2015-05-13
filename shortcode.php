@@ -23,7 +23,9 @@ function _sbcg_sponsors( $atts, $content = '' ) {
         'post_type' => '_sbcg_sponsors',
         'post_status' => 'publish',
         'posts_per_page' => -1,
-        'caller_get_posts'=> 1
+        'caller_get_posts'=> 1,
+        'order' => 'ASC',
+        'orderby' => 'title'
       )
     );
       
