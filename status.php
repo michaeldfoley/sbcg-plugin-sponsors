@@ -10,7 +10,7 @@ function _sbcg_sponsors_status(){
     "public"                    => true,
     "show_in_admin_all_list"    => false,
     "show_in_admin_status_list" => true,
-    "label_count"               => _n_noop( "Archive <span class="count">(%s)</span>", "Archive <span class="count">(%s)</span>", "_sbcgsponsors" )
+    "label_count"               => _n_noop( "Archive <span class=\"count\">(%s)</span>", "Archive <span class=\"count\">(%s)</span>", "_sbcgsponsors" )
   ) );
 }
 add_action( "init", "_sbcg_sponsors_status" );
